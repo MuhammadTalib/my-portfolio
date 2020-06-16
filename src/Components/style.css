@@ -197,6 +197,7 @@
     text-align: center;
 }
 .project-headers{
+    position: relative;
     font-size: 22px;
     left: 25px;
     margin-left: 35px;
@@ -220,7 +221,7 @@
     transform: translateX(-50%);
     background-color: #95D7AE;
     width: 70%;
-    height: 400px;
+    height: 430px;
     text-align: center;
 }
 .email-me{
@@ -234,7 +235,46 @@
     font-weight: 400;
     color:#454851
 }
-/* .form-textfield{
-    width: 80%;
-    margin: 13px;
-} */
+.email{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+.send-btn{
+    position: absolute !important;
+    left: 75%;
+    top: 86%;
+    background-color: #454851 !important;
+}
+.projects-main-div{
+    position: relative;
+    color: #73956F;
+    left: 70px;
+}
+.main-project-wrapper{
+    height: 89%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #95D7AE;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}

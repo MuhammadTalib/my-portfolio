@@ -3,11 +3,6 @@ import "./style.css"
 import { Link } from "react-router-dom"
 
 import mypic from "../Images/mypic.jpg"
-import github from "../Images/github.png"
-import facebook from "../Images/facebook.png"
-import medium from "../Images/medium.png"
-import linkedin from "../Images/linkedin.png"
-import twitter from "../Images/twitter.png"
 
 class SideBar extends Component {
 
@@ -18,6 +13,8 @@ class SideBar extends Component {
             </div>
             <div className="my-name" >Muhammad Talib Waseem</div>
             <div className="ShortDesc"> Software Developer </div>
+            <div className="email ShortDesc"> {"talibwaseem135@gmail.com"} </div>
+
             {/* <div className="Links">
                 <div onClick={()=>{window.open('https://github.com/MuhammadTalib', "_blank")}} className="icon-btn" style={{ backgroundImage : `url(${github})` }}></div>
                 <div onClick={()=>{window.open('https://www.facebook.com/talib.waseem.18', "_blank")}}className="icon-btn" style={{ backgroundImage : `url(${facebook})` }}></div>
