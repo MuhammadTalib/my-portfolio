@@ -23,10 +23,6 @@ class SideBar extends Component {
                 <div onClick={()=>{window.open('https://twitter.com/MuhammadTalibW1', "_blank")}} className="icon-btn" style={{ backgroundImage : `url(${twitter})` }}></div>
             </div> */}
             <div className="side-Navs">
-                {/* <div className="nav"> 
-                    <i className="material-icons nav-icon">home</i>
-                    <Link className="menubtn" to={"/home"}>Home</Link>
-                </div> */}
                 <div className="nav"> 
                     <i className="material-icons nav-icon">help</i>
                     <Link className="menubtn" to={"/about"}>About</Link>
