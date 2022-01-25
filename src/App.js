@@ -6,6 +6,7 @@ import About from "./Components/about";
 import Projects from "./Components/projects";
 import ContactMe from "./Components/contactme";
 function App() {
+  
   return (
     <BrowserRouter>
       <SideBar />
