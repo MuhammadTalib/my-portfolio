@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import mypic from "../Images/mypic.jpg";
+import mypic from "../Images/mypic.jpg";  
 
 class SideBar extends Component {
   render() {
