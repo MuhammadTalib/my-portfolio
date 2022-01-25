@@ -1,19 +1,19 @@
-import React from 'react';
-import './App.css';
-import SideBar from "./Components/sidebar"
+import React from "react";
+import "./App.css";
+import SideBar from "./Components/sidebar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import About from './Components/about';
-import Projects from './Components/projects';
-import ContactMe from "./Components/contactme"
+import About from "./Components/about";
+import Projects from "./Components/projects";
+import ContactMe from "./Components/contactme";
 function App() {
   return (
     <BrowserRouter>
-      <SideBar/>
+      <SideBar />
       <Switch>
         {/* <Route path="/home" component={Home}></Route> */}
-        <Route path="/about" component={About}></Route>
-        <Route path="/projects" component={Projects}></Route>
-        <Route path="/contactme" component={ContactMe}></Route>
+        <Route path="/" component={About}></Route>
+        <Route path="/my-portfolio/projects" component={Projects}></Route>
+        <Route path="/my-portfolio/contactme" component={ContactMe}></Route>
       </Switch>
     </BrowserRouter>
   );
