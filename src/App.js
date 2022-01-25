@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";       
+import "./App.css";
 
 import SideBar from "./Components/sidebar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -13,8 +13,8 @@ function App() {
       <Switch>
         {/* <Route path="/home" component={Home}></Route> */}
         <Route path="/" component={About}></Route>
-        <Route path="/my-portfolio/projects" component={Projects}></Route>
-        <Route path="/my-portfolio/contactme" component={ContactMe}></Route>
+        <Route path="/projects" component={Projects}></Route>
+        <Route path="/contactme" component={ContactMe}></Route>
       </Switch>
     </BrowserRouter>
   );
