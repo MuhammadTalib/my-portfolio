@@ -28,8 +28,7 @@ class SideBar extends Component {
         <div className="side-Navs">
           <div className="nav">
             <i className="material-icons nav-icon">help</i>
-            <Link className="menubtn" to={"/about"}>
-            
+            <Link className="menubtn" to={"/my-portfolio/about"}>
               About
             </Link>
           </div>

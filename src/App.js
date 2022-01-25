@@ -12,9 +12,9 @@ function App() {
       <SideBar />
       <Switch>
         {/* <Route path="/home" component={Home}></Route> */}
-        <Route path="/" component={About}></Route>
-        <Route path="/projects" component={Projects}></Route>
-        <Route path="/contactme" component={ContactMe}></Route>
+        <Route path="/my-portfolio" component={About}></Route>
+        <Route path="/my-portfolio/projects" component={Projects}></Route>
+        <Route path="/my-portfolio/contactme" component={ContactMe}></Route>
       </Switch>
     </BrowserRouter>
   );
