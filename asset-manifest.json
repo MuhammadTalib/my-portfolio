@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6a968e53.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.f9c50fef.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.f9c50fef.chunk.js.map",
-    "runtime-main.js": "/my-portfolio/static/js/runtime-main.9efc66b9.js",
-    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.9efc66b9.js.map",
-    "static/js/2.dea42142.chunk.js": "/my-portfolio/static/js/2.dea42142.chunk.js",
-    "static/js/2.dea42142.chunk.js.map": "/my-portfolio/static/js/2.dea42142.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.a3bd6b20.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.7fdd79ff.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.7fdd79ff.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.c58b4907.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.c58b4907.js.map",
+    "static/js/2.77fde621.chunk.js": "/my-portfolio/static/js/2.77fde621.chunk.js",
+    "static/js/2.77fde621.chunk.js.map": "/my-portfolio/static/js/2.77fde621.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.b99bb774531b2802b68fbea8eeac56e7.js": "/my-portfolio/precache-manifest.b99bb774531b2802b68fbea8eeac56e7.js",
+    "precache-manifest.11dd3ef0c366be65e3e0c62b2ff354ab.js": "/my-portfolio/precache-manifest.11dd3ef0c366be65e3e0c62b2ff354ab.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.6a968e53.chunk.css.map": "/my-portfolio/static/css/main.6a968e53.chunk.css.map",
-    "static/js/2.dea42142.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.dea42142.chunk.js.LICENSE.txt",
-    "static/media/mypic.jpg": "/my-portfolio/static/media/mypic.c2bbe936.jpg"
+    "static/css/main.a3bd6b20.chunk.css.map": "/my-portfolio/static/css/main.a3bd6b20.chunk.css.map",
+    "static/js/2.77fde621.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.77fde621.chunk.js.LICENSE.txt",
+    "static/media/back2.png": "/my-portfolio/static/media/back2.56b86277.png",
+    "static/media/sidebarback.png": "/my-portfolio/static/media/sidebarback.fba3c087.png",
+    "static/media/stackoverflow.PNG": "/my-portfolio/static/media/stackoverflow.f7b7518b.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.9efc66b9.js",
-    "static/js/2.dea42142.chunk.js",
-    "static/css/main.6a968e53.chunk.css",
-    "static/js/main.f9c50fef.chunk.js"
+    "static/js/runtime-main.c58b4907.js",
+    "static/js/2.77fde621.chunk.js",
+    "static/css/main.a3bd6b20.chunk.css",
+    "static/js/main.7fdd79ff.chunk.js"
   ]
 }
