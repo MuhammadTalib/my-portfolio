@@ -7,7 +7,7 @@ import Projects from "./Components/projects";
 import ContactMe from "./Components/ContactMe";
 import axios from "axios";
 import backImage from "./Images/back2.png";
-import { Grid } from "@material-ui/core";
+import Grid from "@mui/material/Grid";
 import { ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
 import { createTheme, adaptV4Theme } from "@mui/material/styles";
 let primary = "#950740";
@@ -20,6 +20,9 @@ export const theme1 = createTheme(
     },
   })
 );
+export function getFaviconEl(id) {
+  return document.getElementById(id);
+}
 
 function App() {
   const [myInfo, setMyInfo] = useState(null);
@@ -27,14 +30,13 @@ function App() {
   useEffect(() => {
     const getMyInfo = async () => {
       let result = await axios.get(
-        "https://api.github.com/users/MuhammadTalib",
-        {
-          headers: {
-            Authorization: "token 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",
-          },
-        }
+        "https://api.github.com/users/MuhammadTalib"
       );
       setMyInfo(result?.data);
+
+      const favicon = getFaviconEl("favicon");
+      favicon.href = result?.data.avatar_url;
+
       return result;
     };
     getMyInfo();

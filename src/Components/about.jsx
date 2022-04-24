@@ -1,6 +1,6 @@
-import { Grid } from "@material-ui/core";
 import React, { Component } from "react";
 import "./style.css";
+import Grid from "@mui/material/Grid";
 
 class About extends Component {
   state = {};
