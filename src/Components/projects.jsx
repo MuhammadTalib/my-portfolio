@@ -1,8 +1,20 @@
+import axios from "axios";
 import React from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 
 const Projects = () => {
-  useEffect(() => {}, []);
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.github.com/users/MuhammadTalib/repos?per_page=200&topics=[react]"
+      )
+      .then((res) => {
+        console.log("res", res.data);
+        setProjects(res.data);
+      });
+  }, []);
   return (
     <div className="about-main">
       <div className="page-header">Projects</div>
@@ -18,7 +30,10 @@ const Projects = () => {
             </a>
           </li>
           <li>
-            <a href={"https://muhammadtalib.github.io/Smart-Compiler/"}>
+            <a
+              href={"https://muhammadtalib.github.io/Smart-Compiler/"}
+              target="_blank"
+            >
               Smart Compiler
             </a>
           </li>

@@ -1,16 +1,30 @@
-import React, { Component } from 'react';
-import "./style.css"
+import { Grid } from "@material-ui/core";
+import React, { Component } from "react";
+import "./style.css";
 
 class About extends Component {
-    state = {  }
-    render() { 
-        return ( <div className="about-main">
-            <div className="page-header">About Me</div>
-            <div className="about-desc">"I am a final year student of BSCS from University of Karachi and currently I am working as a part time Software Developer in Zaavia. I am passionate to learn and to know about new technology. I have a great experience of working in React.js and Angular.js
-             in frontend and Node.js with Express in backend. I have completed a course in Android Application Development in Kotlin and have many works in Android and Kotlin on my github account. There are many things that I want to achieve in my future in terms of my career. I have a Youtube
-             channel through which I try to spread the words that I have and in future I want to be a successful Developer on Full Stack technologies." 
+  state = {};
+  render() {
+    return (
+      <Grid container>
+        <Grid container item xs={12} lg={12} md={12} xl={12}>
+          <div className="page-header">About Me</div>
+        </Grid>
+        <Grid container item xs={12} lg={12} md={12} xl={12}>
+          <Grid item xs={2} lg={2} md={2} xl={2}></Grid>
+          <Grid item xs={8} lg={8} md={8} xl={8}>
+            <div className="about-desc">
+              "I am a Software engineer having 3+ years experience in working
+              with full stack technologies. I am highly passionate to learn and
+              to know about new things. I have a great experience of working
+              Javascript, React.js, Angular,Node.js, AWS and machine learning
+              algorithms. I have a degree in Bachelors of Computer Science from
+              Universiy of Karachi.
             </div>
-            {/* <div className="sub-heading"> Skills </div>
+          </Grid>
+          <Grid item xs={12} lg={12} md={12} xl={12}></Grid>
+        </Grid>
+        {/* <div className="sub-heading"> Skills </div>
             <div className="br"></div>
 
             <div className="sub-item"> 
@@ -41,9 +55,9 @@ class About extends Component {
                 <div className="bullet-item">Bachelor of Science in Computer Science</div>
             </div>
             <div className="para">UBIT, University Of Karachi</div> */}
-
-        </div> );
-    }
+      </Grid>
+    );
+  }
 }
- 
+
 export default About;
