@@ -10,20 +10,19 @@ import React from "react";
 import medium from "../Images/medium.png";
 import stack from "../Images/stackoverflow.PNG";
 import "./style.css";
+import nodemailer from "nodemailer";
 
-// import nodemailer from "nodemailer";
+let testAccount = nodemailer.createTestAccount();
 
-// let testAccount = nodemailer.createTestAccount();
-
-// let transporter = nodemailer.createTransport({
-//     host: "smtp.ethereal.email",
-//     port: 587,
-//     secure: false, // true for 465, false for other ports
-//     auth: {
-//       user: testAccount.user, // generated ethereal user
-//       pass: testAccount.pass, // generated ethereal password
-//     },
-//   });
+let transporter = nodemailer.createTransport({
+  host: "smtp.ethereal.email",
+  port: 587,
+  secure: false, // true for 465, false for other ports
+  auth: {
+    user: testAccount.user, // generated ethereal user
+    pass: testAccount.pass, // generated ethereal password
+  },
+});
 
 const ContactMe = () => {
   return (

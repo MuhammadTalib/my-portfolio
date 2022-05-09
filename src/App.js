@@ -3,7 +3,7 @@ import "./App.css";
 import SideBar from "./Components/sidebar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import About from "./Components/about";
-import Projects from "./Components/projects";
+import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import axios from "axios";
 import backImage from "./Images/back2.png";
@@ -30,7 +30,12 @@ function App() {
   useEffect(() => {
     const getMyInfo = async () => {
       let result = await axios.get(
-        "https://api.github.com/users/MuhammadTalib"
+        "https://api.github.com/users/MuhammadTalib",
+        {
+          headers: {
+            Authorization: "token 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",
+          },
+        }
       );
       setMyInfo(result?.data);
 
@@ -44,15 +49,15 @@ function App() {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme1}>
-        {myInfo && (
-          <BrowserRouter>
+        <BrowserRouter>
+          {myInfo && (
             <Grid container>
-              <Grid item xs={3} lg={3} md={3} xl={3}>
+              <Grid item xs={12} lg={3} md={3} xl={3}>
                 <SideBar myInfo={myInfo} />
               </Grid>
               <Grid
                 item
-                xs={9}
+                xs={12}
                 lg={9}
                 md={9}
                 xl={9}
@@ -61,6 +66,8 @@ function App() {
                   backgroundColor: "white",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
+                  height: "100vh",
+                  overflowY: "scroll",
                 }}
               >
                 <Switch>
@@ -70,8 +77,8 @@ function App() {
                 </Switch>
               </Grid>
             </Grid>
-          </BrowserRouter>
-        )}
+          )}
+        </BrowserRouter>
       </ThemeProvider>
     </StyledEngineProvider>
   );
