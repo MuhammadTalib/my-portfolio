@@ -4,13 +4,16 @@
 
 <!-- THIS CODE IS FOR TESTING PURPOSE ONLY, DO NOT USE IT IN PRODUCTION. 
 After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+
+<!-- THIS CODE IS FOR TESTING PURPOSE ONLY, DO NOT USE IT IN PRODUCTION. 
+After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
 <script>
 (function () {
 	var s = document.createElement('script');
-	s.src = 'https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk-loader.js';
-	s.setAttribute('data-tenant-uuid', '1e956c75-019b-4aa4-ad82-de3d495de9d4');
-	s.setAttribute('data-domain-uuid', 'b3c90c21-db70-40c1-9c61-a61e3ab284c0');
-	s.setAttribute('data-backend-url', 'https://dev.securiti.xyz');
+	s.src = 'https://cdn-qa.securiti.xyz/consent/cookie-consent-sdk-loader.js';
+	s.setAttribute('data-tenant-uuid', '2dff0f1b-7fd3-4bfc-accb-5a008a1c3b69');
+	s.setAttribute('data-domain-uuid', '7481aa51-b8c7-4f9c-a22a-cb1d9abc7a0b');
+	s.setAttribute('data-backend-url', 'https://qa.securiti.xyz');
 	s.setAttribute('data-securiti-staging-mode', 'true');
 	s.setAttribute('data-skip-css', 'false');
 	s.defer = true;
