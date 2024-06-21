@@ -16,7 +16,7 @@ After adding this script, call setConsentBannerParams({uuid: <unique id> }) to s
 	s.setAttribute('data-backend-url', 'https://qa.securiti.xyz');
 	s.setAttribute('data-securiti-staging-mode', 'true');
 	s.setAttribute('data-skip-css', 'false');
-	s.defer = true;
+	s.defer = !0;
 	var parent_node = document.head || document.body;
 	parent_node.appendChild(s);
 })()
