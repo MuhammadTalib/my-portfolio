@@ -7,6 +7,23 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TVHHVKRR');</script>
 	<!-- End Google Tag Manager -->
+
+	<link rel='stylesheet' type='text/css' href='undefined/consent/cookie-consent.css' />
+
+	<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+	<script>
+	(function () {
+		var s = document.createElement('script');
+		s.src = 'https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk-loader.js';
+		s.setAttribute('data-tenant-uuid', '1e956c75-019b-4aa4-ad82-de3d495de9d4');
+		s.setAttribute('data-domain-uuid', 'f00b33de-ca21-4bd1-8817-adf1aa313ebc');
+		s.setAttribute('data-backend-url', 'https://dev.securiti.xyz');
+		s.setAttribute('data-skip-css', 'false');
+		s.defer = true;
+		var parent_node = document.head || document.body;
+		parent_node.appendChild(s);
+	})()
+	</script>
 	<link rel='stylesheet' type='text/css' href='https://cdn-qa.securiti.xyz/consent/cookie-consent.css' />
 	<link rel='stylesheet' type='text/css' href='https://cdn-dev.securiti.xyz/consent/cookie-consent.css' />
 
