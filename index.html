@@ -38,21 +38,13 @@
 <body>
 
 
+    <div id="content" style="display: none;">Content loaded!</div>
+
     <script>
-	document.getElementById('simulateTimeout').addEventListener('click', () => {
-	    document.getElementById('result').innerText = 'Running a long operation...';
-
-	    // Simulate a long-running task
-	    for (let i = 0; i < 1e9; i++) {
-		// Busy-waiting loop to block the main thread
-		if (i === 999999999) {
-		    document.getElementById('result').innerText = 'Operation completed (this simulates a timeout scenario).';
-		}
-	    }
-
-	    // After the loop, you can also indicate a timeout-like behavior
-	    document.getElementById('result').innerText = 'This simulates a timeout!';
-	});
+        // Simulate a slow loading process
+        setTimeout(() => {
+            document.getElementById('content').style.display = 'block';
+        }, 5000); // 5 seconds delay
     </script>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVHHVKRR"
