@@ -37,6 +37,17 @@
 	    });
     </script>
 
+	<script>
+      window.addEventListener('scroll', () => {
+        if (window.innerWidth < 990) return false;
+        const scroll = window.scrollY;
+        const app = window.sApp = window.sApp || document.querySelector('#app');
+        const scrollOffset = app ? app.getBoundingClientRect().bottom : 0;
+        const opacity = scroll > 300 && scrollOffset - window.innerHeight > 0 ? 1 : 0;
+        document.documentElement.style.setProperty('--privacy-side-opacity', opacity);
+      });
+    </script>
+
 	
 
 	<!-- Google Tag Manager (noscript) -->
