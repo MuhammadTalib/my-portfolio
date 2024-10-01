@@ -38,9 +38,13 @@
     <button type="submit">Submit</button>
 </form>
 
-#document (https://dsp-dev.securiti.xyz/notice-embed/f404b819-6aef-4212-b1e2-2b12edfd5a6f)
+<iframe id="myIframe" src="https://dsp-dev.securiti.xyz/notice-embed/f404b819-6aef-4212-b1e2-2b12edfd5a6f" style="border: none;width: 100%;height: 800px;"></iframe>
+    
+
 
 <script>
+
+    
     $(document).ready(function() {
         $('#contactForm').on('submit', function(event) {
             event.preventDefault(); // Prevent form submission
@@ -82,8 +86,33 @@
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(String(email).toLowerCase());
         }
+
+        const iframe = $('#myIframe').get(0);
+
+        // Wait for the iframe to load
+        $(iframe).on('load', function() {
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+            // Attach a click event to all <a> elements in the iframe
+            $(iframeDocument).find('a').on('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                alert(`Link clicked: ${$(this).attr('href')}`);
+                // Add any additional jQuery behavior here
+            });
+        });
     });
     
+</script>
+
+<script>
+    const iframe = document.getElementById('myIframe');
+    
+    window.addEventListener('onclick', function(event) {
+        // Check the origin for security
+        if (event.origin === 'YOUR_ORIGIN_HERE') {
+            console.log('Message from iframe:', event.data);
+        }
+    });
 </script>
 
     
