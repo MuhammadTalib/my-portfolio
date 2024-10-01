@@ -642,17 +642,7 @@
 
     <script>
 
-         $('a').on('click', function(event) {
-            // event.preventDefault(); // Prevent default link behavior
-            // const linkText = $(this).text();
-            // const linkHref = $(this).attr('href');
-            // Send a message to the parent
-            // window.parent.postMessage(`Link clicked: ${linkText}, URL: ${linkHref}`, '*');
-            console.log("Link Clicked")
-
-             // Navigate to about:blank
-            window.open('about:blank', '_blank');
-        });
+        
         
         const languageMap = {
             ar: 'العربية',
@@ -846,6 +836,19 @@
             },
             mounted() {
                 let self = this
+
+                 $('a').on('click', function(event) {
+                    // event.preventDefault(); // Prevent default link behavior
+                    // const linkText = $(this).text();
+                    // const linkHref = $(this).attr('href');
+                    // Send a message to the parent
+                    // window.parent.postMessage(`Link clicked: ${linkText}, URL: ${linkHref}`, '*');
+                    console.log("Link Clicked")
+        
+                     // Navigate to about:blank
+                    window.open('about:blank', '_blank');
+                });
+                
                 // self.removeJQueryEventsByClass('.c-notice-display-page a');
                 self.scrollToSection()
             },
