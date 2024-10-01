@@ -87,22 +87,19 @@
             return re.test(String(email).toLowerCase());
         }
 
-        const iframe = $('#myIframe').get(0);
-
-        // Wait for the iframe to load
-        $(iframe).on('load', function() {
-            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-            // Attach a click event to all <a> elements in the iframe
-            $(iframeDocument).find('a').on('click', function(event) {
-                event.preventDefault(); // Prevent default link behavior
-                alert(`Link clicked: ${$(this).attr('href')}`);
-                // Add any additional jQuery behavior here
-            });
+        $('a').on('click', function(event) {
+            // event.preventDefault(); // Prevent default link behavior
+            // const linkText = $(this).text();
+            // const linkHref = $(this).attr('href');
+            // Send a message to the parent
+            window.parent.postMessage(`Link clicked: ${linkText}, URL: ${linkHref}`, '*');
         });
+
+        
     });
     
 </script>
+    
 
 </body>
 </html>
