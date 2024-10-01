@@ -641,6 +641,19 @@
     <script src="https://dsp-dev.securiti.xyz/static/js/vuetify.min.js"></script>
 
     <script>
+
+         $('a').on('click', function(event) {
+            // event.preventDefault(); // Prevent default link behavior
+            // const linkText = $(this).text();
+            // const linkHref = $(this).attr('href');
+            // Send a message to the parent
+            // window.parent.postMessage(`Link clicked: ${linkText}, URL: ${linkHref}`, '*');
+            console.log("Link Clicked")
+
+             // Navigate to about:blank
+            window.open('about:blank', '_blank');
+        });
+        
         const languageMap = {
             ar: 'العربية',
             bg: 'Български',
@@ -1141,17 +1154,7 @@
             return re.test(String(email).toLowerCase());
         }
 
-        $('a').on('click', function(event) {
-            // event.preventDefault(); // Prevent default link behavior
-            // const linkText = $(this).text();
-            // const linkHref = $(this).attr('href');
-            // Send a message to the parent
-            // window.parent.postMessage(`Link clicked: ${linkText}, URL: ${linkHref}`, '*');
-            console.log("Link Clicked")
-
-             // Navigate to about:blank
-            window.open('about:blank', '_blank');
-        });
+       
 
         
     });
