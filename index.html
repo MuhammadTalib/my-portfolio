@@ -972,6 +972,7 @@
             },
             methods: {
                 removeJQueryEventsByClass(className) {
+                    console.log("jQuery", jQuery)
                     if(typeof jQuery !== 'undefined'){
                         jQuery && jQuery(`${className}`).off();
                     }
