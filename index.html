@@ -1,20 +1,22 @@
 <!doctype html><html lang="en">
 <head> 
 
+
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
 <script>
 (function () {
 	var s = document.createElement('script');
-	s.src = 'https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk-loader.js';
-	s.setAttribute('data-tenant-uuid', '1e956c75-019b-4aa4-ad82-de3d495de9d4');
-	s.setAttribute('data-domain-uuid', '4442b15e-401b-40cf-b114-383a52541d5b');
-	s.setAttribute('data-backend-url', 'https://dev.securiti.xyz');
+	s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+	s.setAttribute('data-tenant-uuid', '6ff09c38-3c07-4bd8-96f7-75d45d18de64');
+	s.setAttribute('data-domain-uuid', '8524a243-070c-41d9-a3fc-0e2a6c3dde09');
+	s.setAttribute('data-backend-url', 'https://app.securiti.ai');
 	s.setAttribute('data-skip-css', 'false');
 	s.defer = true;
 	var parent_node = document.head || document.body;
 	parent_node.appendChild(s);
 })()
 </script>
+	
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
