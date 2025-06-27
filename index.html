@@ -55,7 +55,10 @@
 
 		
 		window.addEventListener("message", function(event) {
-		    console.log("Parent received:", event.data);
+			if(event && event.data && event.data.type === "WINDOW_RESIZE" ) {
+			    console.log("Parent received:", event.data.payload.height);
+			}
+			
   		});
 		
 		const iframe = document.getElementById('my-iframe');
