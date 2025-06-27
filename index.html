@@ -63,8 +63,7 @@
 
 
 		window.addEventListener("message", function(event) {
-		    if (event.origin !== "https://trusted-iframe.com") return;
-		    console.log("Parent received:", event.data);
+		    console.log("Parent received:", event);
   		});
 	</script>
 
