@@ -55,7 +55,7 @@
 
 		
 		window.addEventListener("message", function(event) {
-		    console.log("Parent received:", event);
+		    console.log("Parent received:", event.data);
   		});
 		
 		const iframe = document.getElementById('my-iframe');
