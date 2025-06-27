@@ -56,6 +56,8 @@
 		const iframe = document.getElementById('d9d36bed-c02c-4dcc-8803-61ae91369561');
 		
 		window.addEventListener("message", function(event) {
+			console.log("Parent received:", event.data);
+
 			if(event && event.data && event.data.type === "IFRAME_CONTENT_SIZE" ) {
 			 	console.log("Parent received:", event.data.payload.height);
 				iframe.style.height = event.data.payload.height + 'px';
