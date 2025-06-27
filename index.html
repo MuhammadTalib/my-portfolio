@@ -60,8 +60,10 @@
 
 			if(event && event.data && event.data.type === "IFRAME_CONTENT_SIZE" ) {
 				const iframe2 = document.getElementById(event.data.payload.id);
-			 	console.log("Parent received:", event.data.payload.height);
-				iframe2.style.height = event.data.payload.height + 'px';
+				if(iframe2) {
+					console.log("Parent received:", event.data.payload.height);
+					iframe2.style.height = event.data.payload.height + 'px';
+				}
 			}
   		});
 		
