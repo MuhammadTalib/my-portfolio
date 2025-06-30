@@ -60,7 +60,7 @@
 				const iframe2 = document.getElementById(event.data.payload.id);
 				if(iframe2) {
 					console.log("Parent received:", event.data.payload.height);
-					//iframe2.style.height = event.data.payload.height + 'px';
+					iframe2.style.height = event.data.payload.height + 'px';
 				}
 			}
   		});
