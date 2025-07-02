@@ -68,6 +68,7 @@
 				const iframe2 = document.getElementById(event.data.payload.id);
 				if(iframe2) {
 					let scrollpos =  event.data.payload.scrollY;
+					console.log("scrollpos", scrollpos);
 					window.scrollTo({ top:  scrollpos , behavior: 'smooth' })
 				}
 			}
