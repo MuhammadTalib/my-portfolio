@@ -63,6 +63,14 @@
 					iframe2.style.height = event.data.payload.height + 'px';
 				}
 			}
+
+			if(event && event.data && event.data.type === "IFRAME_SCROLL_POSITION" ) {
+				const iframe2 = document.getElementById(event.data.payload.id);
+				if(iframe2) {
+					let scrollpos =  event.data.payload.scrollY;
+					window.scrollTo({ top:  scrollpos , behavior: 'smooth' })
+				}
+			}
   		});
 		
 		const iframeDocument = iframe && (iframe.contentDocument || iframe.contentWindow.document);
