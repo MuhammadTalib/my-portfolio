@@ -37,6 +37,12 @@
 </head>
 <body style="font-family: Shadows Into Light" >
 
+	Sundeep Privacy Notice
+	
+	<iframe id="sundeep" src="https://dsp-qa.securiti.xyz/notice-embed/79649cf3-9960-4d6c-8eb1-68a4bf4e6e6f" style="border: none;width: 100%;height: 800px;"></iframe>
+
+	__________
+
 	<iframe src="https://cmp-manual1586630.qa.privaciops.com/privacy-center-embed/cmp-manual1586630" style="border: none;width: 100%;height: 800px;border: none;width: 100%;height: 800px;margin: 100px;border: 2px solid;"></iframe>
 
 	Talib Test 11111123
@@ -57,6 +63,16 @@
 	<script src="/my-portfolio/static/js/main.7fdd79ff.chunk.js"></script>
 <!-- 	<iframe id="d9d36bed-c02c-4dcc-8803-61ae91369561" scrolling="no" src="https://dsp-dev.securiti.xyz/notice-embed/d9d36bed-c02c-4dcc-8803-61ae91369561" style="border: none;width: 100%;height: 800px;"></iframe> -->
 	<script>
+
+
+		const iframeSundeep = document.getElementById('sundeep');
+		window.addEventListener("message", function(event) {
+			if(iframeSundeep && event && event.data && event.data.type === "IFRAME_CONTENT_SIZE" ) {
+				iframeSundeep.style.height = event.data.payload.height + 'px';
+			}
+		});
+
+		
 		const iframe = document.getElementById('d9d36bed-c02c-4dcc-8803-61ae91369561');
 		
 		window.addEventListener("message", function(event) {
@@ -93,6 +109,8 @@
 		    body { font-family: 'Shadows Into Light', sans-serif; }
 		`;
 		iframeDocument && iframeDocument.head.appendChild(style);
+
+	
 
 
 	</script>
