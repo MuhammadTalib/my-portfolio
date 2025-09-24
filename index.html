@@ -68,7 +68,7 @@
 		const iframeSundeep = document.getElementById('sundeep');
 		window.addEventListener("message", function(event) {
 			if(iframeSundeep && event && event.data && event.data.type === "IFRAME_CONTENT_SIZE" ) {
-				iframeSundeep.style.height = event.data.payload.height + 'px';
+				iframeSundeep.style.height = event.data.payload.height + 10 + 'px';
 			}
 		});
 
