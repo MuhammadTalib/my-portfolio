@@ -22,6 +22,18 @@
 	parent_node.appendChild(s);
 })()
 </script>
+
+<script>
+	function changeRouteForNoticeSection() {
+	    var indicator = document.getElementById('current-notice-section')
+	    if (indicator) {
+	        indicator.textContent = decodeURIComponent(window.location.hash.replace(/^#/, '')) || '(none)'
+	    }
+	}()
+	
+	window.addEventListener('hashchange', showCurrentNoticeSection)
+	setInterval(showCurrentNoticeSection, 300)
+</script>
 	
 <meta charset="utf-8"/>
 <link id="favicon" rel="icon" href=""/>
